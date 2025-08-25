@@ -1,0 +1,292 @@
+{"level":"info","time":"2025-07-30T09:52:00+07:00","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-07-30T09:52:00+07:00","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-07-30T09:52:00+07:00","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-07-30T09:52:00+07:00","message":"✅ Server is running at :8080"}
+{"level":"warn","time":"2025-07-30T09:52:50+07:00","message":"⚠️  Shutdown signal received ..."}
+{"level":"info","time":"2025-07-30T09:52:50+07:00","message":"🍺 Server exited gracefully"}
+{"level":"info","time":"2025-07-30T02:54:41Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-07-30T02:54:41Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-07-30T02:54:41Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-07-30T02:54:41Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-04T14:03:53Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-04T14:03:53Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-04T14:03:53Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-04T14:03:53Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-04T14:04:20Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-04T14:04:21Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-04T14:04:21Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-04T14:04:21Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-04T14:05:07Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-04T14:05:07Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-04T14:05:07Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-04T14:05:07Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-04T14:05:09Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-04T14:05:09Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-04T14:05:09Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-04T14:05:09Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-04T14:07:46Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-04T14:07:46Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-04T14:07:46Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-04T14:07:46Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-04T14:11:11Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-04T14:11:11Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-04T14:11:11Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-04T14:11:11Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-04T14:11:13Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-04T14:11:13Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-04T14:11:13Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-04T14:11:13Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:21:41Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:21:41Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:21:42Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:21:42Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:22:52Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:22:52Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:22:52Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:22:52Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:23:50Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:23:50Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:23:50Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:23:50Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:24:13Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:24:13Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:24:13Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:24:13Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:24:15Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:24:15Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:24:15Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:24:15Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:27:57Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:27:57Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:27:57Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:27:57Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:27:59Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:27:59Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:27:59Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:27:59Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:28:01Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:28:01Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:28:01Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:28:01Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:28:07Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:28:07Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:28:07Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:28:07Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:32:21Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:32:21Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:32:21Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:32:21Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:32:24Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:32:24Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:32:24Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:32:24Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:32:30Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:32:30Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:32:30Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:32:30Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:32:41Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:32:41Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:32:41Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:32:41Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:33:07Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:33:07Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:33:07Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:33:07Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:33:09Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:33:09Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:33:09Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:33:09Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:33:32Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:33:32Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:33:32Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:33:32Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:33:38Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:33:38Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:33:38Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:33:38Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:33:43Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:33:43Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:33:43Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:33:43Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:33:49Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:33:49Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:33:49Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:33:49Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:33:50Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:33:50Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:33:50Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:33:50Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:06Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:06Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:06Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:06Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:10Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:10Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:10Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:10Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:13Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:13Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:13Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:13Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:16Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:16Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:16Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:16Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:20Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:20Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:20Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:20Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:33Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:33Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:34Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:34Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:37Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:37Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:37Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:37Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:50Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:50Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:50Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:50Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:34:53Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:53Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:53Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:53Z","message":"✅ Server is running at :8080"}
+{"level":"warn","time":"2025-08-05T02:34:59Z","message":"⚠️  Shutdown signal received ..."}
+{"level":"info","time":"2025-08-05T02:34:59Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:34:59Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:34:59Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:34:59Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:04Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:04Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:04Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:04Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:06Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:06Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:06Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:06Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:13Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:13Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:13Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:13Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:16Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:16Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:16Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:16Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:32Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:32Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:32Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:32Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:40Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:40Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:40Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:40Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:47Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:47Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:47Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:47Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:35:54Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:35:54Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:35:54Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:35:54Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:01Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:01Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:01Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:01Z","message":"✅ Server is running at :8080"}
+{"level":"warn","time":"2025-08-05T02:36:04Z","message":"⚠️  Shutdown signal received ..."}
+{"level":"info","time":"2025-08-05T02:36:04Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:04Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:04Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:04Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:18Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:18Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:18Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:18Z","message":"✅ Server is running at :8080"}
+{"level":"warn","time":"2025-08-05T02:36:21Z","message":"⚠️  Shutdown signal received ..."}
+{"level":"info","time":"2025-08-05T02:36:21Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:21Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:21Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:21Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:27Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:27Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:27Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:27Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:29Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:29Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:29Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:29Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:33Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:33Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:33Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:33Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:39Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:39Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:39Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:39Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:41Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:42Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:42Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:42Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:36:52Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:36:52Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:36:52Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:36:52Z","message":"✅ Server is running at :8080"}
+{"level":"warn","time":"2025-08-05T02:43:23Z","message":"⚠️  Shutdown signal received ..."}
+{"level":"info","time":"2025-08-05T02:44:16Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:44:16Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:44:16Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:44:16Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:46:22Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:46:22Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:46:22Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:46:22Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:46:28Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:46:28Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:46:28Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:46:28Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:46:33Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:46:33Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:46:33Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:46:33Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:50:10Z","message":"✅ Loaded successfully .env"}
+{"level":"fatal","error":"db ping error: failed to connect to `user=quoctuan database=project-shopping-cart`: 172.18.0.2:5432 (db): failed SASL auth: FATAL: password authentication failed for user \"quoctuan\" (SQLSTATE 28P01)","time":"2025-08-05T02:50:10Z","message":"Database init failed"}
+{"level":"info","time":"2025-08-05T02:54:33Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:54:33Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:54:33Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:54:33Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:55:11Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:55:11Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:55:11Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:55:11Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:55:17Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:55:17Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:55:17Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:55:17Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:56:48Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:56:48Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:56:48Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:56:48Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T02:57:14Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T02:57:14Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T02:57:14Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T02:57:14Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T03:28:04Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T03:28:04Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T03:28:04Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T03:28:04Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T03:28:19Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T03:28:19Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T03:28:19Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T03:28:19Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T04:05:00Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T04:05:00Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T04:05:00Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T04:05:00Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T04:05:55Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T04:05:55Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T04:05:55Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T04:05:55Z","message":"✅ Server is running at :8080"}
+{"level":"info","time":"2025-08-05T04:06:06Z","message":"✅ Loaded successfully .env"}
+{"level":"info","time":"2025-08-05T04:06:06Z","message":"🍺 Connected Database Postgresql"}
+{"level":"info","time":"2025-08-05T04:06:06Z","message":"🍺 Connected Redis"}
+{"level":"info","time":"2025-08-05T04:06:06Z","message":"✅ Server is running at :8080"}
