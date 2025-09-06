@@ -3,14 +3,18 @@ root = "."
 tmp_dir = "tmp"
 
 [build]
-    cmd = "go build -o ./tmp/main ./cmd/api"
-    bin = "tmp/main"
+    cmd = "go build -o ./tmp/main.exe ./cmd/api"
+    bin = "tmp/main.exe"
     include_ext = ["go", "yaml", "yml", "env"]
     exclude_dir = ["assets", "tmp", "vendor", "frontend/node_modules"]
     exclude_file = []
     delay = 1000
     send_interrupt = true
     log = "build.log"
+
+[env]
+    # Load environment variables
+    env_file = ".env"
 
 [log]
     time = true

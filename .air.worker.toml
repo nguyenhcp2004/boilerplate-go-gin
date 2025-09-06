@@ -3,8 +3,8 @@ root = "."
 tmp_dir = "tmp"
 
 [build]
-    cmd = "go build -o ./tmp/worker ./cmd/worker"
-    bin = "tmp/worker"
+    cmd = "go build -o ./tmp/worker.exe ./cmd/worker"
+    bin = "tmp/worker.exe"
     include_ext = ["go", "yaml", "yml", "env"]
     exclude_dir = ["assets", "tmp", "vendor", "frontend/node_modules"]
     exclude_file = []
