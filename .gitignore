@@ -21,11 +21,8 @@ go.work
 
 # Environment variables
 .env
+.env.*
 .env.local
-.env.development
-.env.test
-.env.production
-.env.*.local
 
 # IDE and editor files
 .vscode/
