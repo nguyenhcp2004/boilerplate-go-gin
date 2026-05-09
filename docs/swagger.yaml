@@ -1,0 +1,783 @@
+basePath: /api/v1
+definitions:
+  utils.Pagination:
+    properties:
+      has_next:
+        type: boolean
+      has_prev:
+        type: boolean
+      limit:
+        type: integer
+      page:
+        type: integer
+      total_pages:
+        type: integer
+      total_records:
+        type: integer
+    type: object
+  v1dto.CreateUserInput:
+    properties:
+      age:
+        example: 25
+        type: integer
+      email:
+        example: user@example.com
+        type: string
+      level:
+        enum:
+        - 1
+        - 2
+        - 3
+        example: 3
+        type: integer
+      name:
+        example: Nguyen Van A
+        type: string
+      password:
+        example: Password123!
+        minLength: 8
+        type: string
+      status:
+        enum:
+        - 1
+        - 2
+        - 3
+        example: 1
+        type: integer
+    required:
+    - email
+    - level
+    - name
+    - password
+    - status
+    type: object
+  v1dto.ErrorResponse:
+    properties:
+      detail:
+        example: Validation failed
+        type: string
+      error:
+        example: Invalid request
+        type: string
+    type: object
+  v1dto.LoginInput:
+    properties:
+      email:
+        example: user@example.com
+        type: string
+      password:
+        example: Password123!
+        minLength: 8
+        type: string
+    required:
+    - email
+    - password
+    type: object
+  v1dto.LoginResponse:
+    properties:
+      access_token:
+        example: access-token-value
+        type: string
+      expires_in:
+        example: 900
+        type: integer
+      refresh_token:
+        example: refresh-token-value
+        type: string
+    type: object
+  v1dto.LoginSuccessResponse:
+    properties:
+      data:
+        $ref: '#/definitions/v1dto.LoginResponse'
+      message:
+        example: Login successfully
+        type: string
+      status:
+        example: success
+        type: string
+    type: object
+  v1dto.MessageResponse:
+    properties:
+      message:
+        example: Operation completed successfully
+        type: string
+      status:
+        example: success
+        type: string
+    type: object
+  v1dto.RefreshTokenInput:
+    properties:
+      refresh_token:
+        example: refresh-token-value
+        type: string
+    required:
+    - refresh_token
+    type: object
+  v1dto.RequestPasswordInput:
+    properties:
+      email:
+        example: user@example.com
+        type: string
+    required:
+    - email
+    type: object
+  v1dto.ResetPasswordInput:
+    properties:
+      new_password:
+        example: NewPassword123!
+        minLength: 8
+        type: string
+      token:
+        example: reset-token-value
+        type: string
+    required:
+    - new_password
+    - token
+    type: object
+  v1dto.UpdateUserInput:
+    properties:
+      age:
+        example: 26
+        type: integer
+      level:
+        enum:
+        - 1
+        - 2
+        - 3
+        example: 3
+        type: integer
+      name:
+        example: Nguyen Van B
+        type: string
+      password:
+        example: Password123!
+        minLength: 8
+        type: string
+      status:
+        enum:
+        - 1
+        - 2
+        - 3
+        example: 1
+        type: integer
+    type: object
+  v1dto.UserDTO:
+    properties:
+      age:
+        type: integer
+      created_at:
+        example: "2026-05-09 12:00:00"
+        type: string
+      email_address:
+        example: user@example.com
+        type: string
+      full_name:
+        example: Nguyen Van A
+        type: string
+      level:
+        example: Member
+        type: string
+      status:
+        example: Active
+        type: string
+      uuid:
+        example: 550e8400-e29b-41d4-a716-446655440000
+        type: string
+    type: object
+  v1dto.UserSuccessResponse:
+    properties:
+      data:
+        $ref: '#/definitions/v1dto.UserDTO'
+      message:
+        example: User returned successfully
+        type: string
+      status:
+        example: success
+        type: string
+    type: object
+  v1dto.UsersListData:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/v1dto.UserDTO'
+        type: array
+      pagination:
+        $ref: '#/definitions/utils.Pagination'
+    type: object
+  v1dto.UsersListSuccessResponse:
+    properties:
+      data:
+        $ref: '#/definitions/v1dto.UsersListData'
+      message:
+        example: User list successfully
+        type: string
+      status:
+        example: success
+        type: string
+    type: object
+info:
+  contact: {}
+  description: REST API documentation for the Go Gin user management service.
+  title: User Management API
+  version: "1.0"
+paths:
+  /auth/forgot-password:
+    post:
+      consumes:
+      - application/json
+      description: Send a reset password link to the given email address.
+      parameters:
+      - description: Forgot password payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/v1dto.RequestPasswordInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.MessageResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      summary: Request forgot password
+      tags:
+      - auth
+  /auth/login:
+    post:
+      consumes:
+      - application/json
+      description: Authenticate a user with email and password.
+      parameters:
+      - description: Login payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/v1dto.LoginInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.LoginSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      summary: Login
+      tags:
+      - auth
+  /auth/logout:
+    post:
+      consumes:
+      - application/json
+      description: Revoke the current refresh token.
+      parameters:
+      - description: Refresh token payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/v1dto.RefreshTokenInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.MessageResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: Logout
+      tags:
+      - auth
+  /auth/refresh:
+    post:
+      consumes:
+      - application/json
+      description: Generate a new access token and refresh token from a valid refresh
+        token.
+      parameters:
+      - description: Refresh token payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/v1dto.RefreshTokenInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.LoginSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      summary: Refresh token
+      tags:
+      - auth
+  /auth/reset-password:
+    post:
+      consumes:
+      - application/json
+      description: Reset the user password using a reset token.
+      parameters:
+      - description: Reset password payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/v1dto.ResetPasswordInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.MessageResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      summary: Reset password
+      tags:
+      - auth
+  /users:
+    get:
+      consumes:
+      - application/json
+      description: Get a paginated list of active users.
+      parameters:
+      - description: Search keyword
+        in: query
+        maxLength: 50
+        minLength: 3
+        name: search
+        type: string
+      - description: Page number
+        in: query
+        minimum: 1
+        name: page
+        type: integer
+      - description: Items per page
+        in: query
+        maximum: 500
+        minimum: 1
+        name: limit
+        type: integer
+      - description: Order field
+        enum:
+        - user_id
+        - user_created_at
+        in: query
+        name: order_by
+        type: string
+      - description: Sort direction
+        enum:
+        - asc
+        - desc
+        in: query
+        name: sort
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.UsersListSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: List users
+      tags:
+      - users
+    post:
+      consumes:
+      - application/json
+      description: Create a user account.
+      parameters:
+      - description: Create user payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/v1dto.CreateUserInput'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/v1dto.UserSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: Create user
+      tags:
+      - users
+  /users/{uuid}:
+    delete:
+      consumes:
+      - application/json
+      description: Soft delete an active user by UUID.
+      parameters:
+      - description: User UUID
+        format: uuid
+        in: path
+        name: uuid
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.UserSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: Soft delete user
+      tags:
+      - users
+    get:
+      consumes:
+      - application/json
+      description: Get one active user by UUID.
+      parameters:
+      - description: User UUID
+        format: uuid
+        in: path
+        name: uuid
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.UserSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: Get user by UUID
+      tags:
+      - users
+    put:
+      consumes:
+      - application/json
+      description: Update an existing user by UUID.
+      parameters:
+      - description: User UUID
+        format: uuid
+        in: path
+        name: uuid
+        required: true
+        type: string
+      - description: Update user payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/v1dto.UpdateUserInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.UserSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: Update user
+      tags:
+      - users
+  /users/{uuid}/restore:
+    put:
+      consumes:
+      - application/json
+      description: Restore a soft-deleted user by UUID.
+      parameters:
+      - description: User UUID
+        format: uuid
+        in: path
+        name: uuid
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.UserSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: Restore user
+      tags:
+      - users
+  /users/{uuid}/trash:
+    delete:
+      consumes:
+      - application/json
+      description: Permanently delete a user from trash by UUID.
+      parameters:
+      - description: User UUID
+        format: uuid
+        in: path
+        name: uuid
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: Permanently delete user
+      tags:
+      - users
+  /users/soft-deleted:
+    get:
+      consumes:
+      - application/json
+      description: Get a paginated list of soft-deleted users.
+      parameters:
+      - description: Search keyword
+        in: query
+        maxLength: 50
+        minLength: 3
+        name: search
+        type: string
+      - description: Page number
+        in: query
+        minimum: 1
+        name: page
+        type: integer
+      - description: Items per page
+        in: query
+        maximum: 500
+        minimum: 1
+        name: limit
+        type: integer
+      - description: Order field
+        enum:
+        - user_id
+        - user_created_at
+        in: query
+        name: order_by
+        type: string
+      - description: Sort direction
+        enum:
+        - asc
+        - desc
+        in: query
+        name: sort
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1dto.UsersListSuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/v1dto.ErrorResponse'
+      security:
+      - ApiKeyAuth: []
+      - BearerAuth: []
+      summary: List soft-deleted users
+      tags:
+      - users
+schemes:
+- http
+- https
+securityDefinitions:
+  ApiKeyAuth:
+    description: API key required by the server middleware.
+    in: header
+    name: X-API-Key
+    type: apiKey
+  BearerAuth:
+    description: 'Bearer token in the format: Bearer {token}.'
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

@@ -8,30 +8,30 @@ import (
 )
 
 type UserDTO struct {
-	UUID      string `json:"uuid"`
-	Name      string `json:"full_name"`
-	Email     string `json:"email_address"`
+	UUID      string `json:"uuid" example:"550e8400-e29b-41d4-a716-446655440000"`
+	Name      string `json:"full_name" example:"Nguyen Van A"`
+	Email     string `json:"email_address" example:"user@example.com"`
 	Age       *int   `json:"age"`
-	Status    string `json:"status"`
-	Level     string `json:"level"`
-	CreatedAt string `json:"created_at"`
+	Status    string `json:"status" example:"Active"`
+	Level     string `json:"level" example:"Member"`
+	CreatedAt string `json:"created_at" example:"2026-05-09 12:00:00"`
 }
 
 type CreateUserInput struct {
-	Name     string `json:"name" binding:"required"`
-	Email    string `json:"email" binding:"required,email,email_advanced"`
-	Age      int32  `json:"age" binding:"omitempty,gt=0"`
-	Password string `json:"password" binding:"required,min=8,password_strong"`
-	Status   int32  `json:"status" binding:"required,oneof=1 2 3"`
-	Level    int32  `json:"level" binding:"required,oneof=1 2 3"`
+	Name     string `json:"name" binding:"required" example:"Nguyen Van A"`
+	Email    string `json:"email" binding:"required,email,email_advanced" example:"user@example.com"`
+	Age      int32  `json:"age" binding:"omitempty,gt=0" example:"25"`
+	Password string `json:"password" binding:"required,min=8,password_strong" example:"Password123!"`
+	Status   int32  `json:"status" binding:"required,oneof=1 2 3" example:"1" enums:"1,2,3"`
+	Level    int32  `json:"level" binding:"required,oneof=1 2 3" example:"3" enums:"1,2,3"`
 }
 
 type UpdateUserInput struct {
-	Name     *string `json:"name" binding:"omitempty"`
-	Age      *int32  `json:"age" binding:"omitempty,gt=0"`
-	Password *string `json:"password" binding:"omitempty,min=8,password_strong"`
-	Status   *int32  `json:"status" binding:"omitempty,oneof=1 2 3"`
-	Level    *int32  `json:"level" binding:"omitempty,oneof=1 2 3"`
+	Name     *string `json:"name" binding:"omitempty" example:"Nguyen Van B"`
+	Age      *int32  `json:"age" binding:"omitempty,gt=0" example:"26"`
+	Password *string `json:"password" binding:"omitempty,min=8,password_strong" example:"Password123!"`
+	Status   *int32  `json:"status" binding:"omitempty,oneof=1 2 3" example:"1" enums:"1,2,3"`
+	Level    *int32  `json:"level" binding:"omitempty,oneof=1 2 3" example:"3" enums:"1,2,3"`
 }
 
 type GetUserByUuidParam struct {

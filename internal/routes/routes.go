@@ -1,6 +1,7 @@
 package routes
 
 import (
+	_ "user-management-api/docs"
 	"user-management-api/internal/middleware"
 	v1routes "user-management-api/internal/routes/v1"
 	"user-management-api/internal/utils"
@@ -9,6 +10,8 @@ import (
 
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 type Route interface {
@@ -21,6 +24,7 @@ func RegisterRoutes(r *gin.Engine, authService auth.TokenService, cacheService c
 	rateLimterLogger := utils.NewLoggerWithPath("rate_limiter.log", "warning")
 
 	r.Use(gzip.Gzip(gzip.DefaultCompression))
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	r.Use(
 		middleware.RateLimiterMiddleware(rateLimterLogger),
 		middleware.CORSMiddleware(),

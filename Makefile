@@ -33,6 +33,9 @@ server:
 # Generate sqlc
 sqlc:
 	sqlc generate
+# Generate Swagger/OpenAPI docs
+swagger:
+	swag init -g cmd/api/main.go --parseInternal
 
 # Create a new migration (make migrate-create NAME=profiles)
 migrate-create:
@@ -93,4 +96,4 @@ logs-prod:
 bash:
 	docker exec -it golang-api /bin/sh
 
-.PHONY: importdb exportdb server migrate-create migrate-up migrate-down migrate-force migrate-drop migrate-goto migrate-down-n sqlc build run-binary prod stop-prod logs-prod bash noapp stop-noapp dev
+.PHONY: importdb exportdb server migrate-create migrate-up migrate-down migrate-force migrate-drop migrate-goto migrate-down-n sqlc swagger build run-binary prod stop-prod logs-prod bash noapp stop-noapp dev

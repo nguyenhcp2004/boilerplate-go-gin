@@ -1,5 +1,19 @@
 package main
 
+// @title User Management API
+// @version 1.0
+// @description REST API documentation for the Go Gin user management service.
+// @BasePath /api/v1
+// @schemes http https
+// @securityDefinitions.apikey ApiKeyAuth
+// @in header
+// @name X-API-Key
+// @description API key required by the server middleware.
+// @securityDefinitions.apikey BearerAuth
+// @in header
+// @name Authorization
+// @description Bearer token in the format: Bearer {token}.
+
 import (
 	"path/filepath"
 	"user-management-api/internal/app"
